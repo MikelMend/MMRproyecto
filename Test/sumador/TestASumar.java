@@ -18,4 +18,14 @@ public class TestASumar {
 		String resultado = sumi.mostrar();
 		assertEquals("5=5",resultado);
 	}
+	
+	/**
+	 * comprueba que sea mayor a un dígito
+	 */
+	@Test
+	public void testmasde1digito() {
+		ASumar sumi = new ASumar("12");
+		String resultado = sumi.mostrar();
+		assertEquals("1 + 2 = 3", resultado);
+  }
 }
